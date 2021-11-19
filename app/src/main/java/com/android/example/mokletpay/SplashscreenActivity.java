@@ -21,7 +21,7 @@ public class SplashscreenActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), OnboardingActivity.class));
                 finish();
             }
         }, 1000L); //3000 L = 3 detik
