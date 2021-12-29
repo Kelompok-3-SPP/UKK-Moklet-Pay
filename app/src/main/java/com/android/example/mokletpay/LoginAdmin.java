@@ -13,14 +13,5 @@ public class LoginAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_admin);
-
-        Button btnLoginAdmin = findViewById(R.id.login_admin);
-
-        btnLoginAdmin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LoginAdmin.this, HomeAdmin.class));
-            }
-        });
     }
 }
