@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LoginAdmin extends AppCompatActivity {
+public class LoginSiswa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_admin);
+        setContentView(R.layout.activity_login_siswa);
 
-        Button btnLoginAdmin = findViewById(R.id.login_admin);
+        Button btnLoginSiswa = findViewById(R.id.login_siswa);
 
-        btnLoginAdmin.setOnClickListener(new View.OnClickListener() {
+        btnLoginSiswa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginAdmin.this, HomeAdmin.class));
+                startActivity(new Intent(LoginSiswa.this, HomeSiswa.class));
             }
         });
     }

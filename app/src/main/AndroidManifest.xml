@@ -10,22 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
         <activity
+            android:name=".HomeAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".HomePetugas"
+            android:exported="false" />
+        <activity
+            android:name=".HomeSiswa"
+            android:exported="false" />
+        <activity
             android:name=".LoginPetugas"
             android:exported="false" />
         <activity
             android:name=".LoginAdmin"
             android:exported="false" />
         <activity
-            android:name=".LoginUser"
+            android:name=".LoginSiswa"
             android:exported="false" />
         <activity
             android:name=".OnboardingActivity"
             android:exported="true" />
         <activity
             android:name=".siswa.LoginSiswaActivity"
-            android:exported="true">
-            
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
