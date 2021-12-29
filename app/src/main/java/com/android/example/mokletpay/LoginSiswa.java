@@ -14,13 +14,5 @@ public class LoginSiswa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_siswa);
 
-        Button btnLoginSiswa = findViewById(R.id.login_siswa);
-
-        btnLoginSiswa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LoginSiswa.this, HomeSiswa.class));
-            }
-        });
     }
 }

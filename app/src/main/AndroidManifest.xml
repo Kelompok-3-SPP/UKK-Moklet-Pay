@@ -10,13 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
         <activity
-            android:name=".HomeAdmin"
-            android:exported="false" />
-        <activity
             android:name=".HomePetugas"
-            android:exported="false" />
-        <activity
-            android:name=".HomeSiswa"
             android:exported="false" />
         <activity
             android:name=".LoginPetugas"
