@@ -10,9 +10,10 @@
 
     <ImageView
         android:id="@+id/titleImage"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="95dp"
         android:src="@drawable/ic_onboarding1" />
 
 
@@ -20,13 +21,13 @@
         android:id="@+id/texttitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/medium"
         android:letterSpacing="0"
         android:text="@string/heading_one"
         android:textAlignment="center"
         android:textColor="#252525"
-        android:textSize="26dp"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="295dp" />
 
@@ -40,7 +41,7 @@
         android:text="@string/desc_one"
         android:textAlignment="center"
         android:textColor="#7D7D7D"
-        android:textSize="18dp"
+        android:textSize="16sp"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="341dp" />
 
