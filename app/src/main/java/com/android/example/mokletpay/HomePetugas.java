@@ -1,14 +1,41 @@
 package com.android.example.mokletpay;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class HomePetugas extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class HomePetugas extends Fragment {
+
+    private RecyclerView recyclerSiswa;
+    private ArrayList<SiswaP> list = new ArrayList<>();
+
+    public HomePetugas() {
+        // Required empty public constructor
+    }
+
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_petugas);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.activity_home_petugas, container, false);
+
+        recyclerSiswa = view.findViewById(R.id.recyclerHistory);
+        recyclerSiswa.setHasFixedSize(true);
+
+        list.addAll(DataSiswaP.getListDataSiswaP());
+
+        recyclerSiswa.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        recyclerSiswa.setAdapter(new ListSiswaAdapterP(list));
+
+        return view;
     }
 }

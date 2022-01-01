@@ -19,7 +19,7 @@ public class LoginPetugas extends AppCompatActivity {
         btnLoginPetugas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginPetugas.this, HomePetugas.class));
+                startActivity(new Intent(LoginPetugas.this, MainNavbarActivity.class));
             }
         });
     }
