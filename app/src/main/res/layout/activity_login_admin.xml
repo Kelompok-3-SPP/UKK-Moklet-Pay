@@ -89,7 +89,7 @@
                     android:focusableInTouchMode="true"
                     android:hint="Username"
                     android:imeOptions="actionNext"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:paddingStart="32dp"
                     android:paddingTop="18dp"
                     android:paddingBottom="18dp"
