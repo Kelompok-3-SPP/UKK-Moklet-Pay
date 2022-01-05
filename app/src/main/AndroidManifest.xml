@@ -9,23 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
+        <activity android:name=".data.DataSPP"></activity>
+        <activity android:name=".data.DataPetugas" />
+        <activity android:name=".data.DataKelas" />
+        <activity android:name=".data.DataSiswa" />
         <activity
             android:name=".HomeAdmin"
-            android:exported="false" />
-        <activity
-            android:name=".LoginPetugas"
             android:exported="false" />
         <activity
             android:name=".LoginAdmin"
             android:exported="false" />
         <activity
-            android:name=".LoginSiswa"
-            android:exported="false" />
-        <activity
             android:name=".OnboardingActivity"
-            android:exported="true" />
-        <activity
-            android:name=".siswa.LoginSiswaActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
