@@ -11,4 +11,7 @@
     <string name="desc_two">Data tervalidasi dan disimpan dengan aman.</string>
     <string name="desc_three">Program administrasi sekolah tanpa batas ruang dan waktu.</string>
     <string name="data_kelas">Kelas</string>
+    <string name="tv_tahun">Tahun</string>
+    <string name="tv_nominal">Nominal</string>
+    <string name="data_spp">Data SPP</string>
 </resources>
