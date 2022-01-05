@@ -42,7 +42,7 @@ public class MainNavbarActivity extends AppCompatActivity implements BottomNavig
                 fragment = new HomePetugas();
                 break;
             case R.id.data:
-                fragment = new MainDatasiswaPetugas();
+                fragment = new SubSiswaPetugas();
                 break;
 
         }

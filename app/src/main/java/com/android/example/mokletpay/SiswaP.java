@@ -1,6 +1,7 @@
 package com.android.example.mokletpay;
 
 public class SiswaP {
+
     private String namaP, nominalP, tanggalP;
 
     public String getNamaP() {return namaP;}

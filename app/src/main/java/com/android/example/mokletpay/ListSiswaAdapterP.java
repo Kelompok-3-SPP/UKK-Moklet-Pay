@@ -47,7 +47,7 @@ public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.Li
     @Override
     public int getItemCount() { return listSiswaP.size();}
 
-    class ListViewHolder extends RecyclerView.ViewHolder {
+    static class ListViewHolder extends RecyclerView.ViewHolder {
         TextView tv_nama, tv_nominal, tv_tanggal;
 
         ListViewHolder(View itemView) {

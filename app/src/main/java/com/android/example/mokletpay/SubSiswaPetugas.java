@@ -6,8 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class MainDatasiswaPetugas extends Fragment {
+import java.util.ArrayList;
+
+public class SubSiswaPetugas extends Fragment {
+
+    private RecyclerView recyclerDataSiswa;
+    private ArrayList<SiswaPetugas> list = new ArrayList<>();
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,7 +27,7 @@ public class MainDatasiswaPetugas extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MainDatasiswaPetugas() {
+    public SubSiswaPetugas() {
         // Required empty public constructor
     }
 
@@ -31,8 +40,8 @@ public class MainDatasiswaPetugas extends Fragment {
      * @return A new instance of fragment DataFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MainDatasiswaPetugas newInstance(String param1, String param2) {
-        MainDatasiswaPetugas fragment = new MainDatasiswaPetugas();
+    public static SubSiswaPetugas newInstance(String param1, String param2) {
+        SubSiswaPetugas fragment = new SubSiswaPetugas();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -53,6 +62,16 @@ public class MainDatasiswaPetugas extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_datasiswa_petugas, container, false);
+        View view = inflater.inflate(R.layout.datasiswa_petugas, container, false);
+
+        recyclerDataSiswa = view.findViewById(R.id.recyclerDatasiswa);
+        recyclerDataSiswa.setHasFixedSize(true);
+
+        list.addAll(DataSiswaPetugas.getListDataSiswaPetugas());
+
+        recyclerDataSiswa.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        recyclerDataSiswa.setAdapter(new ListSiswaAdapterPetugas(list));
+
+        return view;
     }
 }
