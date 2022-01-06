@@ -22,7 +22,6 @@
             android:text="@string/data_kelas"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:fontFamily="@font/medium"
             android:layout_marginVertical="24dp"
             android:layout_marginStart="24dp"
             app:layout_constraintStart_toStartOf="parent"
