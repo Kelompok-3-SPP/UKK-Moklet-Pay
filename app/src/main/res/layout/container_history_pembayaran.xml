@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         tools:text="Rofico Ahmad"
         android:textColor="#BA000000"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/medium"/>
 
     <TextView
         android:id="@+id/tv_nominal_list_history"
@@ -23,7 +24,8 @@
         android:layout_marginTop="5dp"
         android:textColor="#EC1515"
         android:textSize="15sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/bold"/>
 
     <TextView
         android:id="@+id/tv_tanggal_list_history"
@@ -34,7 +36,8 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="5dp"
         android:textColor="#86000000"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/reguler"/>
 
 
 </RelativeLayout>

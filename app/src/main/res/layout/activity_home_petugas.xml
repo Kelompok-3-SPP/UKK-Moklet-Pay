@@ -30,7 +30,8 @@
             android:layout_marginTop="80dp"
             android:text="Hello,"
             android:textColor="#FFFFFF"
-            android:textSize="35sp" />
+            android:textSize="35sp"
+            android:fontFamily="@font/bold"/>
 
         <TextView
             android:id="@+id/judul2"

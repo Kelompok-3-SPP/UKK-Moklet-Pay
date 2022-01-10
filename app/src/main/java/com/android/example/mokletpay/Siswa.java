@@ -1,6 +1,6 @@
 package com.android.example.mokletpay;
 
-public class SiswaP {
+public class Siswa {
 
     private String namaP, nominalP, tanggalP;
 

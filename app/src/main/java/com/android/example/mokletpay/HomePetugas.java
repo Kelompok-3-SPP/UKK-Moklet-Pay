@@ -1,7 +1,6 @@
 package com.android.example.mokletpay;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 public class HomePetugas extends Fragment {
 
     private RecyclerView recyclerSiswa;
-    private ArrayList<SiswaP> list = new ArrayList<>();
+    private ArrayList<Siswa> list = new ArrayList<>();
 
     public HomePetugas() {
         // Required empty public constructor
@@ -31,7 +30,7 @@ public class HomePetugas extends Fragment {
         recyclerSiswa = view.findViewById(R.id.recyclerHistory);
         recyclerSiswa.setHasFixedSize(true);
 
-        list.addAll(DataSiswaP.getListDataSiswaP());
+        list.addAll(DataSiswa.getListDataSiswaP());
 
         recyclerSiswa.setLayoutManager(new LinearLayoutManager(view.getContext()));
         recyclerSiswa.setAdapter(new ListSiswaAdapterP(list));
