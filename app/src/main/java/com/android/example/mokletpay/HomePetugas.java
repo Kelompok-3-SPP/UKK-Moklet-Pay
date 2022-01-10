@@ -33,7 +33,7 @@ public class HomePetugas extends Fragment {
         list.addAll(DataSiswa.getListDataSiswaP());
 
         recyclerSiswa.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        recyclerSiswa.setAdapter(new ListSiswaAdapterP(list));
+        recyclerSiswa.setAdapter(new ListSiswaAdapter(list));
 
         return view;
     }

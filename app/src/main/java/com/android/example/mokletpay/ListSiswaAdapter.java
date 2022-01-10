@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.ListViewHolder>{
+public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.ListViewHolder>{
     private ArrayList<Siswa> listSiswaP;
     private OnItemClickCallback onItemClickCallback;
 
@@ -18,7 +18,7 @@ public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.Li
         this.onItemClickCallback = onItemClickCallback;
     }
 
-    public ListSiswaAdapterP(ArrayList<Siswa> list){this.listSiswaP = list; }
+    public ListSiswaAdapter(ArrayList<Siswa> list){this.listSiswaP = list; }
 
 
 
