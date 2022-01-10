@@ -37,7 +37,8 @@
                 android:layout_marginBottom="8dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Nama"/>
+                android:text="Nama"
+                android:fontFamily="@font/bold"/>
 
             <TextView
                 android:id="@+id/tv_hari"
@@ -45,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:textSize="14sp"
-                android:text="Hari"/>
+                android:text="Hari"
+                android:fontFamily="@font/reguler"/>
 
         </LinearLayout>
 

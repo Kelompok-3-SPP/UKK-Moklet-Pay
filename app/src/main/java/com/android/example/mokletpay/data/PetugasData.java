@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class PetugasData {
     public static String[][] data = new String[][]{
-            {"XII RPL 1","Senin"},
-            {"XII RPL 2","Selasa"},
-            {"XII RPL 3","Rabu"},
-            {"XII RPL 4","Kamis"},
-            {"XII RPL 2","Jumat"},
-            {"XII RPL 3","Sabtu"},
-            {"XII RPL 4","Minggu"},
+            {"Guy Hawkins","Senin"},
+            {"Guy Hawkins","Selasa"},
+            {"Guy Hawkins","Rabu"},
+            {"Guy Hawkins","Kamis"},
+            {"Guy Hawkins","Jumat"},
+            {"Guy Hawkins","Sabtu"},
+            {"Guy Hawkins","Minggu"},
     };
 
     public static ArrayList<Petugas> getListDataPetugas(){
