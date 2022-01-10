@@ -51,7 +51,7 @@
             android:drawablePadding="23dp"
             android:drawableTint="#BDBDBD"
             android:focusableInTouchMode="true"
-            android:hint="Search place or souvenirs"
+            android:hint="Search Siswa"
             android:imeOptions="actionSearch"
             android:paddingTop="11dp"
             android:paddingBottom="11dp"

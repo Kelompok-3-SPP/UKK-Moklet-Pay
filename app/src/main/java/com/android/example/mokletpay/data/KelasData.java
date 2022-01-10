@@ -10,6 +10,12 @@ public class KelasData {
             {"XI TKJ"},
             {"XII RPL"},
             {"XII TKJ"},
+            {"X RPL"},
+            {"X TKJ"},
+            {"XI RPL"},
+            {"XI TKJ"},
+            {"XII RPL"},
+            {"XII TKJ"},
     };
 
     public static ArrayList<Kelas> getListDataKelas(){
