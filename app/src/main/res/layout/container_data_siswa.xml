@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/img_datasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_avatar_1"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nama_datasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Jane Copper"
+        android:textColor="#2D2D2D"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="72dp"
+        android:fontFamily="@font/bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_kelas_datasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="XII RPL 3"
+        android:layout_below="@+id/tv_nama_datasiswa"
+        android:layout_marginTop="5dp"
+        android:textColor="#2D2D2D"
+        android:textSize="15sp"
+        android:layout_marginLeft="72dp"
+        android:fontFamily="@font/medium"/>
+
+</RelativeLayout>
