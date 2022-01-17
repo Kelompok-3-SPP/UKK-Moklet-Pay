@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageButton btnUser = findViewById(R.id.bguser);
+        ImageButton btnPetugas = findViewById(R.id.bgpetugas);
+        ImageButton btnAdmin = findViewById(R.id.bgadmin);
 
         btnUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,4 +26,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-} }
+        btnPetugas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, LoginPetugas.class));
+            }
+        });
+
+        btnAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, LoginAdmin.class));
+            }
+        });
+    }
+}
