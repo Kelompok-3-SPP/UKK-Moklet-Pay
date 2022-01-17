@@ -9,20 +9,36 @@ import android.view.View;
 import android.widget.ImageButton;
 import com.android.example.mokletpay.R;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton btnPetugas = findViewById(R.id.bgpetugas);
+    ImageButton btnSiswa = findViewById(R.id.bgsiswa);
+    ImageButton btnAdmin = findViewById(R.id.bgadmin);
+    ImageButton btnPetugas = findViewById(R.id.bgpetugas);
 
-        btnPetugas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LoginPetugas.class));
-            }
-        });
 
-} }
+    btnSiswa.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(MainActivity.this, LoginSiswaActivity.class));
+        }
+    });
+    btnAdmin.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(MainActivity.this, LoginAdminActivity.class));
+        }
+    });
+    btnPetugas.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(MainActivity.this, LoginPetugasActivity.class));
+        }
+    });
+
+
+}
+}

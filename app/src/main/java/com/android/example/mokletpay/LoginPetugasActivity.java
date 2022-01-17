@@ -1,10 +1,10 @@
 package com.android.example.mokletpay;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class LoginPetugas extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class LoginPetugasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
