@@ -7,7 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.ImageButton;
-import com.android.example.mokletpay.R;
+
+import com.android.example.mokletpay.siswa.LoginSiswaActivity;
 
 public class MainActivity extends AppCompatActivity{
     @Override

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
+        <activity android:name=".siswa.HomeSiswaActivity"></activity>
         <activity
             android:name=".OnboardingActivity"
             android:exported="true" />
@@ -29,7 +30,7 @@
             android:name=".LoginPetugasActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginSiswaActivity"
+            android:name=".siswa.LoginSiswaActivity"
             android:exported="true" />
     </application>
 
