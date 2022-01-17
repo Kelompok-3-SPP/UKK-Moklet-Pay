@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.example.mokletpay">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
         <activity
-            android:name=".LoginPetugas"
+            android:name=".HomeSiswa"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSiswa"
             android:exported="false" />
         <activity
             android:name=".OnboardingActivity"

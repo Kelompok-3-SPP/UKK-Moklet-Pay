@@ -10,5 +10,8 @@
     <string name="desc_one">Dari lembaga yang terpercaya dan berpengalaman</string>
     <string name="desc_two">Data tervalidasi dan disimpan dengan aman.</string>
     <string name="desc_three">Program administrasi sekolah tanpa batas ruang dan waktu.</string>
-    <string name="history_price">Rp1.000.000</string>
+
+    //Home Siswa
+    <string name="nama_siswa">Nama Siswa</string>
+    <string name="history_price">Rp. 000.000,00</string>
 </resources>
