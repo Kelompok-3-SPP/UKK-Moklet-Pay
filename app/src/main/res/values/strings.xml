@@ -12,4 +12,8 @@
     <string name="desc_three">Program administrasi sekolah tanpa batas ruang dan waktu.</string>
     <string name="history_price">Rp1.000.000</string>
     <string name="nama_siswa">namasiswa</string>
+    <string name="data_spp">Data SPP</string>
+    <string name="data_kelas">Kelas</string>
+    <string name="tv_tahun">Tahun</string>
+    <string name="tv_nominal">Rp000.000</string>
 </resources>

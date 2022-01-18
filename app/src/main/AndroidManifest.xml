@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
-        <activity android:name=".petugas.HomePetugasActivity"></activity>
+        <activity android:name=".admin.HomeAdminActivity"></activity>
+        <activity android:name=".petugas.HomePetugasActivity" />
         <activity android:name=".siswa.HomeSiswaActivity" />
         <activity
             android:name=".OnboardingActivity"
@@ -25,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginAdminActivity"
+            android:name=".admin.LoginAdminActivity"
             android:exported="true" />
         <activity
             android:name=".petugas.LoginPetugasActivity"
@@ -35,7 +36,19 @@
             android:exported="true" />
         <activity
             android:name=".petugas.MainNavbarActivity"
-            android:exported="true"/>
+            android:exported="true" />
+        <activity
+            android:name=".admin.DataKelasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".admin.DataPetugasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".admin.DataSPPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".admin.DataSiswaAdminActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
