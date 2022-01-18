@@ -13,14 +13,14 @@ import com.android.example.mokletpay.R;
 import java.util.ArrayList;
 
 public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.ListViewHolder> {
-    private ArrayList<Siswa> listSiswa;
+    private ArrayList<SiswaAdmin> listSiswa;
     private OnItemClickCallback onItemClickCallback;
 
     public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
 
-    public ListSiswaAdapter(ArrayList<Siswa> list){this.listSiswa= list; }
+    public ListSiswaAdapter(ArrayList<SiswaAdmin> list){this.listSiswa= list; }
 
 
 
@@ -33,7 +33,7 @@ public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.List
 
     @Override
     public void onBindViewHolder(ListViewHolder holder, int position) {
-        Siswa siswa = listSiswa.get(position);
+        SiswaAdmin siswa = listSiswa.get(position);
         holder.tv_nama_datasiswa.setText(siswa.getNamaSiswa());
         holder.tv_kelas_datasiswa.setText(siswa.getKelasSiswa());
 
@@ -59,7 +59,7 @@ public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.List
     }
 
     public interface OnItemClickCallback{
-        void onItemClicked(Siswa data);
+        void onItemClicked(SiswaAdmin data);
     }
 
 }

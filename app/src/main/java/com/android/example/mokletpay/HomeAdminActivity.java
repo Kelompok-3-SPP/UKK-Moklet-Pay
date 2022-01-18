@@ -6,14 +6,13 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 
-import com.android.example.mokletpay.data.DataKelas;
-import com.android.example.mokletpay.data.DataPetugas;
-import com.android.example.mokletpay.data.DataSPP;
-import com.android.example.mokletpay.data.DataSiswa;
+import com.android.example.mokletpay.data.DataKelasActivity;
+import com.android.example.mokletpay.data.DataPetugasActivity;
+import com.android.example.mokletpay.data.DataSPPActivity;
+import com.android.example.mokletpay.data.DataSiswaAdminActivity;
 
-public class HomeAdmin extends AppCompatActivity {
+public class HomeAdminActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,24 +27,24 @@ public class HomeAdmin extends AppCompatActivity {
         cardSiswa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeAdmin.this, DataSiswa.class));
+                startActivity(new Intent(HomeAdminActivity.this, DataSiswaAdminActivity.class));
             }
         });
         cardKelas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeAdmin.this, DataKelas.class));
+                startActivity(new Intent(HomeAdminActivity.this, DataKelasActivity.class));
             }
         });
         cardSPP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeAdmin.this, DataSPP.class));
+                startActivity(new Intent(HomeAdminActivity.this, DataSPPActivity.class));
             }
         });cardPetugas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeAdmin.this, DataPetugas.class));
+                startActivity(new Intent(HomeAdminActivity.this, DataPetugasActivity.class));
             }
         });
 

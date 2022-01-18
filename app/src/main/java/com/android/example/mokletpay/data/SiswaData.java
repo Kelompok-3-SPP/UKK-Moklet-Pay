@@ -9,10 +9,10 @@ public class SiswaData {
             {"Guy Hawkins","XII RPL 3"},
     };
 
-    public static ArrayList<Siswa> getListDataSiswa(){
-        ArrayList<Siswa> list = new ArrayList<>();
+    public static ArrayList<SiswaAdmin> getListDataSiswa(){
+        ArrayList<SiswaAdmin> list = new ArrayList<>();
         for (String[] dataSiswa : data){
-            Siswa siswa = new Siswa();
+            SiswaAdmin siswa = new SiswaAdmin();
             siswa.setNamaSiswa(dataSiswa[0]);
             siswa.setKelasSiswa(dataSiswa[1]);
 

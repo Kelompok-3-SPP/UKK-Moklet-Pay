@@ -1,6 +1,6 @@
 package com.android.example.mokletpay.data;
 
-public class Siswa {
+public class SiswaAdmin {
     private String namaSiswa, kelasSiswa;
 
     public String getNamaSiswa() {return namaSiswa;}

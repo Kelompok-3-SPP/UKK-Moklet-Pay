@@ -10,29 +10,27 @@ import com.android.example.mokletpay.R;
 
 import java.util.ArrayList;
 
-public class DataKelas extends AppCompatActivity {
-
-
-    private RecyclerView rvKelas;
-    private ArrayList<Kelas> list = new ArrayList<>();
+public class DataSPPActivity extends AppCompatActivity {
+    private RecyclerView rvSpp;
+    private ArrayList<Spp> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_data_kelas);
+        setContentView(R.layout.activity_data_spp);
 
-        rvKelas = findViewById(R.id.recyclerHistory);
-        rvKelas.setHasFixedSize(true);
+        rvSpp = findViewById(R.id.rv_spp);
+        rvSpp.setHasFixedSize(true);
 
-        list.addAll(KelasData.getListDataKelas());
+        list.addAll(SppData.getListDataSpp());
         showRecyclerView();
     }
 
     private void showRecyclerView() {
-        rvKelas.setLayoutManager(
+        rvSpp.setLayoutManager(
                 new LinearLayoutManager(this));
-        ListKelasAdapter listKelasAdapter = new ListKelasAdapter(list);
-        rvKelas.setAdapter(listKelasAdapter);
+        ListSppAdapter listSppAdapter = new ListSppAdapter(list);
+        rvSpp.setAdapter(listSppAdapter);
 
     }
 

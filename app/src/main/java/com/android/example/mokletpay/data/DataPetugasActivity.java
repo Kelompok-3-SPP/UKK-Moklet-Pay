@@ -10,29 +10,28 @@ import com.android.example.mokletpay.R;
 
 import java.util.ArrayList;
 
-public class DataSiswa extends AppCompatActivity {
+public class DataPetugasActivity extends AppCompatActivity {
 
-    private RecyclerView rvSiswa;
-    private ArrayList<Siswa> list = new ArrayList<>();
+    private RecyclerView rvPetugas;
+    private ArrayList<Petugas> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_data_siswa);
+        setContentView(R.layout.activity_data_petugas);
 
-        rvSiswa = findViewById(R.id.recyclerDatasiswa);
-        rvSiswa.setHasFixedSize(true);
+        rvPetugas = findViewById(R.id.recycler_petugas);
+        rvPetugas.setHasFixedSize(true);
 
-        list.addAll(SiswaData.getListDataSiswa());
+        list.addAll(PetugasData.getListDataPetugas());
         showRecyclerView();
     }
 
     private void showRecyclerView() {
-        rvSiswa.setLayoutManager(
+        rvPetugas.setLayoutManager(
                 new LinearLayoutManager(this));
-        ListSiswaAdapter listSiswaAdapter = new ListSiswaAdapter(list);
-        rvSiswa.setAdapter(listSiswaAdapter);
-
+        ListPetugasAdapter listPetugasAdapter = new ListPetugasAdapter(list);
+        rvPetugas.setAdapter(listPetugasAdapter);
 
     }
 }

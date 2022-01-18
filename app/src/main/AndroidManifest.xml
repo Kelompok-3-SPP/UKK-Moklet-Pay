@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MokletPay">
-        <activity android:name=".data.DataSPP"></activity>
-        <activity android:name=".data.DataPetugas" />
-        <activity android:name=".data.DataKelas" />
-        <activity android:name=".data.DataSiswa" />
+        <activity android:name=".data.DataSPPActivity"></activity>
+        <activity android:name=".data.DataPetugasActivity" />
+        <activity android:name=".data.DataKelasActivity" />
+        <activity android:name=".data.DataSiswaAdminActivity" />
         <activity
-            android:name=".HomeAdmin"
+            android:name=".HomeAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginAdmin"
+            android:name=".LoginAdminActivity"
             android:exported="false" />
         <activity
             android:name=".OnboardingActivity"
