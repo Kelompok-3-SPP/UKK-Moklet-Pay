@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".petugas.MainDatasiswaPetugas">
+    tools:context=".admin.DataSiswaAdminActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/Judul"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Data Siswa"
-        android:textColor="#EC1515"
-        android:textSize="24dp"
-        android:textAlignment="center"
-        android:paddingTop="32dp"/>
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/Judul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Data Siswa"
+            android:textColor="#EC1515"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:paddingTop="32dp"
+            android:fontFamily="@font/bold"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -25,14 +34,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
+        android:paddingTop="16dp"
         android:overScrollMode="never"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         xmlns:tools="http://schemas.android.com/tools"
         tools:listitem="@layout/container_datasiswa_petugas"
+        android:outlineSpotShadowColor="@color/black"
         >
 
     </androidx.recyclerview.widget.RecyclerView>
 
 
-</FrameLayout>
+
+</RelativeLayout>

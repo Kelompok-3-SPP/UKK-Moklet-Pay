@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class DataSiswaPetugas {
     public static String[][] data = new String[][]{
-            {"Rofico Ahmad", "Rp.120000"},
-            {"Esther Howard","Rp.450000"},
-            {"Guy Hawkins","Rp.350000"},
+            {"Rofico Ahmad", "XII RPL 3"},
+            {"Esther Howard","XII RPL 2"},
+            {"Guy Hawkins","XII RPL 3"},
     };
 
     public static ArrayList<SiswaPetugas> getListDataSiswaPetugas(){

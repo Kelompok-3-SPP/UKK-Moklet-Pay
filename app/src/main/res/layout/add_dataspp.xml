@@ -34,56 +34,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tahun"
-            android:fontFamily="@font/reguler"
-            android:textSize="16sp"
-            android:layout_marginStart="16dp"
-            android:textColor="#4D444B"/>
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/Tahun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawablePadding="8dp">
+            android:layout_marginTop="24dp"
+            android:focusableInTouchMode="true"
+            android:textColorHint="#978B8B"
+            app:boxBackgroundColor="#F7F5F4"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/formTahun"
+                android:id="@+id/edt_Tahun"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/reguler"
+                android:drawablePadding="23dp"
+                android:drawableTint="#BDBDBD"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/medium"
                 android:hint="Tahun"
-                android:inputType="number"
-                android:background="@drawable/edit_text_bg"
-                android:textSize="12sp" />
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingStart="32dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nominal"
-            android:fontFamily="@font/reguler"
-            android:textSize="16sp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:textColor="#4D444B"/>
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/Nominal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawablePadding="8dp">
+            android:layout_marginTop="24dp"
+            android:focusableInTouchMode="true"
+            android:textColorHint="#978B8B"
+            app:boxBackgroundColor="#F7F5F4"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/formNominal"
+                android:id="@+id/edt_Nominal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/reguler"
+                android:drawablePadding="23dp"
+                android:drawableTint="#BDBDBD"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/medium"
                 android:hint="Nominal"
-                android:inputType="text"
-                android:background="@drawable/edit_text_bg"
-                android:textSize="12sp" />
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingStart="32dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
+
 
 
         <com.google.android.material.button.MaterialButton
