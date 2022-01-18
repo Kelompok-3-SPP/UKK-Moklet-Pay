@@ -33,6 +33,9 @@
         <activity
             android:name=".siswa.LoginSiswaActivity"
             android:exported="true" />
+        <activity
+            android:name=".petugas.MainNavbarActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

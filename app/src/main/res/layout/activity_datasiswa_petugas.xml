@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".petugas.MainDatasiswaPetugas">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Data Siswa"
+        android:textColor="#EC1515"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:paddingTop="32dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDatasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:listitem="@layout/container_datasiswa_petugas"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</FrameLayout>
