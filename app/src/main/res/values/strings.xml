@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MokletPay</string>
+
+    //Headings OnBoarding
+    <string name="heading_one">Program Administrasi</string>
+    <string name="heading_two">Data Tervalidasi</string>
+    <string name="heading_three">Bayar Dimanasaja</string>
+
+    //Description OnBoarding
+    <string name="desc_one">Dari lembaga yang terpercaya dan berpengalaman</string>
+    <string name="desc_two">Data tervalidasi dan disimpan dengan aman.</string>
+    <string name="desc_three">Program administrasi sekolah tanpa batas ruang dan waktu.</string>
+    <string name="history_price">Rp1.000.000</string>
+    <string name="nama_siswa">namasiswa</string>
+    <string name="data_spp">Data SPP</string>
+    <string name="data_kelas">Kelas</string>
+    <string name="tv_tahun">Tahun</string>
+    <string name="tv_nominal">Rp000.000</string>
 </resources>
