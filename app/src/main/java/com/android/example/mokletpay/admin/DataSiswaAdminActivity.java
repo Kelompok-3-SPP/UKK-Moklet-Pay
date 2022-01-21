@@ -1,16 +1,20 @@
 package com.android.example.mokletpay.admin;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.example.mokletpay.MainActivity;
 import com.android.example.mokletpay.R;
 
 import java.util.ArrayList;
 
-public class DataSiswaAdminActivity extends AppCompatActivity {
+public class DataSiswaAdminActivity extends AppCompatActivity implements View.OnClickListener {
 
     private RecyclerView rvSiswa;
     private ArrayList<com.android.example.mokletpay.admin.SiswaAdmin> list = new ArrayList<>();
@@ -25,6 +29,7 @@ public class DataSiswaAdminActivity extends AppCompatActivity {
 
         list.addAll(SiswaData.getListDataSiswa());
         showRecyclerView();
+
     }
 
     private void showRecyclerView() {
@@ -34,5 +39,17 @@ public class DataSiswaAdminActivity extends AppCompatActivity {
         rvSiswa.setAdapter(listSiswaAdapter);
 
 
+        RecyclerView recyclerSiswa = findViewById(R.id.recyclerDatasiswa);
+        recyclerSiswa.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.recyclerDatasiswa) {
+            Intent i = new Intent(DataSiswaAdminActivity.this, SiswaKurangBayar.class);
+            startActivity(i);
+        }
     }
 }

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/buttonSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="370dp"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Data Siswa"
+        android:textColor="@color/medium"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/data_diri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reguler"
+            android:text="Nama: Jane Cooper"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reguler"
+            android:text="Kelas: XII RPL 3"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@+id/nama"/>
+
+        <TextView
+            android:id="@+id/jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reguler"
+            android:text="Jurusan: RPL"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@id/kelas"/>
+
+        <TextView
+            android:id="@+id/nisn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reguler"
+            android:text="NISN: 123456789"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@+id/jurusan"/>
+
+        <TextView
+            android:id="@+id/ubah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:fontFamily="@font/bold"
+            android:text="Ubah"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/nama"/>
+
+        <TextView
+            android:id="@+id/status_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nisn"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/medium"
+            android:text="Status Pembayaran"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kurang_bayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nisn"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/status_pembayaran"
+            android:fontFamily="@font/bold"
+            android:text="Kurang Bayar"
+            android:textColor="@color/medium"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/status_pembayaran"
+            android:layout_marginTop="42dp">
+
+            <ImageButton
+                android:id="@+id/btnprint"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_btn_print" />
+
+            <ImageButton
+                android:id="@+id/btnedit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/btnprint"
+                android:src="@drawable/ic_btn_edit" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
