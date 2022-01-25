@@ -16,9 +16,7 @@ public class ListSiswaAdapterPetugas extends RecyclerView.Adapter<ListSiswaAdapt
     private ArrayList<SiswaPetugas> listSiswaPetugas;
     private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
+
 
     public ListSiswaAdapterPetugas(ArrayList<SiswaPetugas> list){this.listSiswaPetugas = list; }
 
@@ -37,12 +35,6 @@ public class ListSiswaAdapterPetugas extends RecyclerView.Adapter<ListSiswaAdapt
         holder.tv_nama_datasiswa.setText(siswapetugas.getNamaPetugas());
         holder.tv_kelas_datasiswa.setText(siswapetugas.getKelasPetugas());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listSiswaPetugas.get(holder.getAdapterPosition()));
-            }
-        });
     }
 
     @Override

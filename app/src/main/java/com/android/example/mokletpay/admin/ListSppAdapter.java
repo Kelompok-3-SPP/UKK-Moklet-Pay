@@ -16,11 +16,7 @@ public class ListSppAdapter extends
                 RecyclerView.Adapter<ListSppAdapter.ListViewHolder>{
 
     private final ArrayList<com.android.example.mokletpay.admin.Spp> listSpp;
-    private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
 
     public ListSppAdapter(ArrayList<com.android.example.mokletpay.admin.Spp> list){this.listSpp= list; }
 
@@ -37,12 +33,7 @@ public class ListSppAdapter extends
         holder.tvTahun.setText(spp.getTahun());
         holder.tvNominal.setText(spp.getNominal());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listSpp.get(holder.getAdapterPosition()));
-            }
-        });
+
     }
 
     @Override

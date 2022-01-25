@@ -1,5 +1,6 @@
 package com.android.example.mokletpay.admin;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +17,7 @@ public class ListPetugasAdapter extends RecyclerView.Adapter<ListPetugasAdapter.
     private ArrayList<Petugas> listPetugas;
     private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
+
 
     public ListPetugasAdapter(ArrayList<Petugas> list) {
         this.listPetugas= list;
@@ -36,13 +35,11 @@ public class ListPetugasAdapter extends RecyclerView.Adapter<ListPetugasAdapter.
         Petugas petugas= listPetugas.get(position);
         holder.tvNamaPetugas.setText(petugas.getNamaPetugas());
         holder.tvHari.setText(petugas.getHari());
-
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listPetugas.get(holder.getAdapterPosition()));
-            }
+            Intent i = new Intent(holder.itemView.getContext(), SiswaKurangBayar.class);
+        holder.itemView.getContext().startActivity(i);}
         });
     }
 

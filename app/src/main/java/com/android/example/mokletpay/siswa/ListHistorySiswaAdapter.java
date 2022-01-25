@@ -15,11 +15,7 @@ import java.util.ArrayList;
 
 public class ListHistorySiswaAdapter extends RecyclerView.Adapter<ListHistorySiswaAdapter.ListViewHolder> {
     private ArrayList<HistorySiswa> listHistorySiswa;
-    private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
 
 
     public ListHistorySiswaAdapter(ArrayList<HistorySiswa> list) {
@@ -40,12 +36,7 @@ public class ListHistorySiswaAdapter extends RecyclerView.Adapter<ListHistorySis
         holder.tvBulan.setText(historysiswa.getBulan());
         holder.tvTanggal.setText(historysiswa.getTanggal());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listHistorySiswa.get(holder.getAdapterPosition()));
-            }
-        });
+
     }
 
     @Override

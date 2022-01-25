@@ -14,11 +14,7 @@ import java.util.ArrayList;
 
 public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.ListViewHolder> {
     private ArrayList<com.android.example.mokletpay.admin.SiswaAdmin> listSiswa;
-    private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
 
     public ListSiswaAdapter(ArrayList<com.android.example.mokletpay.admin.SiswaAdmin> list){this.listSiswa= list; }
 
@@ -37,12 +33,6 @@ public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.List
         holder.tv_nama_datasiswa.setText(siswa.getNamaSiswa());
         holder.tv_kelas_datasiswa.setText(siswa.getKelasSiswa());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listSiswa.get(holder.getAdapterPosition()));
-            }
-        });
     }
 
     @Override
