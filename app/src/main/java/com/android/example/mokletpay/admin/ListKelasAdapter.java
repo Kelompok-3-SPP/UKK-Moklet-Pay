@@ -14,11 +14,7 @@ import java.util.ArrayList;
 
 public class ListKelasAdapter extends RecyclerView.Adapter<ListKelasAdapter.ListViewHolder> {
     private ArrayList<com.android.example.mokletpay.admin.Kelas> listKelas;
-    private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
 
     public ListKelasAdapter(ArrayList<com.android.example.mokletpay.admin.Kelas> list) {
         this.listKelas = list;
@@ -36,12 +32,7 @@ public class ListKelasAdapter extends RecyclerView.Adapter<ListKelasAdapter.List
         com.android.example.mokletpay.admin.Kelas kelas = listKelas.get(position);
         holder.tvKelas.setText(kelas.getKelas());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listKelas.get(holder.getAdapterPosition()));
-            }
-        });
+
     }
 
     @Override

@@ -14,11 +14,7 @@ import java.util.ArrayList;
 
 public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.ListViewHolder>{
     private ArrayList<SiswaP> listSiswaP;
-    private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
 
     public ListSiswaAdapterP(ArrayList<SiswaP> list){this.listSiswaP = list; }
 
@@ -38,12 +34,7 @@ public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.Li
         holder.tv_nominal.setText(siswap.getNominalP());
         holder.tv_tanggal.setText(siswap.getTanggalP());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listSiswaP.get(holder.getAdapterPosition()));
-            }
-        });
+
     }
 
     @Override

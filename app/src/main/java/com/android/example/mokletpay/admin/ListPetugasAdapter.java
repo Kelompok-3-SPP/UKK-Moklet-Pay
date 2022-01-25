@@ -16,9 +16,7 @@ public class ListPetugasAdapter extends RecyclerView.Adapter<ListPetugasAdapter.
     private ArrayList<Petugas> listPetugas;
     private OnItemClickCallback onItemClickCallback;
 
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
-    }
+
 
     public ListPetugasAdapter(ArrayList<Petugas> list) {
         this.listPetugas= list;
@@ -37,13 +35,6 @@ public class ListPetugasAdapter extends RecyclerView.Adapter<ListPetugasAdapter.
         holder.tvNamaPetugas.setText(petugas.getNamaPetugas());
         holder.tvHari.setText(petugas.getHari());
 
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listPetugas.get(holder.getAdapterPosition()));
-            }
-        });
     }
 
     @Override
