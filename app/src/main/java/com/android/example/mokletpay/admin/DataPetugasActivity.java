@@ -1,6 +1,9 @@
 package com.android.example.mokletpay.admin;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,6 +17,7 @@ public class DataPetugasActivity extends AppCompatActivity {
 
     private RecyclerView rvPetugas;
     private ArrayList<Petugas> list = new ArrayList<>();
+    private ImageButton btn_Add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,15 @@ public class DataPetugasActivity extends AppCompatActivity {
 
         rvPetugas = findViewById(R.id.recycler_petugas);
         rvPetugas.setHasFixedSize(true);
+        btn_Add = findViewById(R.id.btn_add_petugas);
+
+        btn_Add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DataPetugasActivity.this, RegisterActivity.class));
+            }
+        });
+
 
         list.addAll(PetugasData.getListDataPetugas());
         showRecyclerView();
