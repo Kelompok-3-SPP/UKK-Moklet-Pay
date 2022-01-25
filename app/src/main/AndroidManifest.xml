@@ -24,12 +24,12 @@
         <activity android:name=".petugas.HomePetugasActivity" />
         <activity android:name=".siswa.HomeSiswaActivity" />
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".menu.OnboardingActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".menu.MainActivity"
             android:exported="true" />
-        <activity android:name=".SplashscreenActivity">
+        <activity android:name=".menu.SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,13 +37,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".admin.LoginAdminActivity"
+            android:name=".menu.LoginAdminActivity"
             android:exported="true" />
         <activity
-            android:name=".petugas.LoginPetugasActivity"
+            android:name=".menu.LoginPetugasActivity"
             android:exported="true" />
         <activity
-            android:name=".siswa.LoginSiswaActivity"
+            android:name=".menu.LoginSiswaActivity"
             android:exported="true" />
         <activity
             android:name=".petugas.MainNavbarActivity"

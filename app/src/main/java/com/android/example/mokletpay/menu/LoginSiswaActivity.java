@@ -1,4 +1,4 @@
-package com.android.example.mokletpay.siswa;
+package com.android.example.mokletpay.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.example.mokletpay.R;
+import com.android.example.mokletpay.siswa.HomeSiswaActivity;
 
 public class LoginSiswaActivity extends AppCompatActivity {
 

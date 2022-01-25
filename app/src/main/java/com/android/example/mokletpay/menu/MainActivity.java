@@ -1,4 +1,4 @@
-package com.android.example.mokletpay;
+package com.android.example.mokletpay.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.android.example.mokletpay.admin.LoginAdminActivity;
-import com.android.example.mokletpay.petugas.LoginPetugasActivity;
-import com.android.example.mokletpay.siswa.LoginSiswaActivity;
+import com.android.example.mokletpay.R;
 
 public class MainActivity extends AppCompatActivity{
     @Override

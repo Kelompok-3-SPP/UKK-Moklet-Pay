@@ -1,4 +1,4 @@
-package com.android.example.mokletpay.admin;
+package com.android.example.mokletpay.kelas;
 
 import java.util.ArrayList;
 
@@ -18,10 +18,10 @@ public class KelasData {
             {"XII TKJ"},
     };
 
-    public static ArrayList<com.android.example.mokletpay.admin.Kelas> getListDataKelas(){
-        ArrayList<com.android.example.mokletpay.admin.Kelas> list = new ArrayList<>();
+    public static ArrayList<Kelas> getListDataKelas(){
+        ArrayList<Kelas> list = new ArrayList<>();
         for (String[] dataKelas : data){
-            com.android.example.mokletpay.admin.Kelas kelas = new com.android.example.mokletpay.admin.Kelas();
+            Kelas kelas = new Kelas();
             kelas.setKelas(dataKelas[0]);
 
             list.add(kelas);

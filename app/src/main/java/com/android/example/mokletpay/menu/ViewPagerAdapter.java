@@ -1,4 +1,4 @@
-package com.android.example.mokletpay;
+package com.android.example.mokletpay.menu;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.android.example.mokletpay.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
 

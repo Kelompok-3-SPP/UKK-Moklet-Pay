@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.example.mokletpay.R;
+import com.android.example.mokletpay.kelas.Kelas;
+import com.android.example.mokletpay.kelas.KelasData;
 
 import java.util.ArrayList;
 
@@ -14,7 +16,7 @@ public class DataKelasActivity extends AppCompatActivity {
 
 
     private RecyclerView rvKelas;
-    private ArrayList<com.android.example.mokletpay.admin.Kelas> list = new ArrayList<>();
+    private ArrayList<Kelas> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package com.android.example.mokletpay;
+package com.android.example.mokletpay.menu;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.android.example.mokletpay.R;
 
 public class OnboardingActivity extends AppCompatActivity {
 

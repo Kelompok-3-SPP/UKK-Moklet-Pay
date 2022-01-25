@@ -9,18 +9,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.example.mokletpay.R;
+import com.android.example.mokletpay.kelas.Kelas;
 
 import java.util.ArrayList;
 
 public class ListKelasAdapter extends RecyclerView.Adapter<ListKelasAdapter.ListViewHolder> {
-    private ArrayList<com.android.example.mokletpay.admin.Kelas> listKelas;
+    private ArrayList<Kelas> listKelas;
     private OnItemClickCallback onItemClickCallback;
 
     public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
 
-    public ListKelasAdapter(ArrayList<com.android.example.mokletpay.admin.Kelas> list) {
+    public ListKelasAdapter(ArrayList<Kelas> list) {
         this.listKelas = list;
     }
 
@@ -33,7 +34,7 @@ public class ListKelasAdapter extends RecyclerView.Adapter<ListKelasAdapter.List
 
     @Override
     public void onBindViewHolder(@NonNull final ListViewHolder holder, int position) {
-        com.android.example.mokletpay.admin.Kelas kelas = listKelas.get(position);
+        Kelas kelas = listKelas.get(position);
         holder.tvKelas.setText(kelas.getKelas());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +60,7 @@ public class ListKelasAdapter extends RecyclerView.Adapter<ListKelasAdapter.List
     }
 
     public interface OnItemClickCallback {
-        void onItemClicked(com.android.example.mokletpay.admin.Kelas data);
+        void onItemClicked(Kelas data);
     }
 
 }

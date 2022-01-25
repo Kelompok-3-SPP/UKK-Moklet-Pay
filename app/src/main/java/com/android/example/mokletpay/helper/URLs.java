@@ -1,4 +1,4 @@
-package com.android.example.mokletpay.admin;
+package com.android.example.mokletpay.helper;
 
 public class URLs {
 

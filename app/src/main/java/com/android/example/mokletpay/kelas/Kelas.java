@@ -1,4 +1,4 @@
-package com.android.example.mokletpay.admin;
+package com.android.example.mokletpay.kelas;
 
 public class Kelas {
     private String kelas;
