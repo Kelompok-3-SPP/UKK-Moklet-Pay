@@ -12,6 +12,7 @@
         <activity android:name=".admin.HomeAdminActivity"></activity>
         <activity android:name=".petugas.HomePetugasActivity" />
         <activity android:name=".siswa.HomeSiswaActivity" />
+        <activity android:name=".petugas.StatusPembayaran"/>
         <activity
             android:name=".OnboardingActivity"
             android:exported="true" />
@@ -52,6 +53,7 @@
         <activity
             android:name=".admin.SiswaKurangBayar"
             android:exported="true" />
+        <activity android:name=".petugas.StatusPembayaran" />
     </application>
 
 </manifest>
