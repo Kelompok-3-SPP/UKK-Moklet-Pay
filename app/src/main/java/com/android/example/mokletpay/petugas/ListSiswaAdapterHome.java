@@ -12,11 +12,11 @@ import com.android.example.mokletpay.R;
 
 import java.util.ArrayList;
 
-public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.ListViewHolder>{
-    private ArrayList<SiswaP> listSiswaP;
+public class ListSiswaAdapterHome extends RecyclerView.Adapter<ListSiswaAdapterHome.ListViewHolder>{
+    private ArrayList<SiswaHomePetugas> listSiswaP;
 
 
-    public ListSiswaAdapterP(ArrayList<SiswaP> list){this.listSiswaP = list; }
+    public ListSiswaAdapterHome(ArrayList<SiswaHomePetugas> list){this.listSiswaP = list; }
 
 
 
@@ -29,7 +29,7 @@ public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.Li
 
     @Override
     public void onBindViewHolder(ListViewHolder holder, int position) {
-        SiswaP siswap = listSiswaP.get(position);
+        SiswaHomePetugas siswap = listSiswaP.get(position);
         holder.tv_nama.setText(siswap.getNamaP());
         holder.tv_nominal.setText(siswap.getNominalP());
         holder.tv_tanggal.setText(siswap.getTanggalP());
@@ -52,7 +52,7 @@ public class ListSiswaAdapterP extends RecyclerView.Adapter<ListSiswaAdapterP.Li
     }
 
        public interface OnItemClickCallback{
-        void onItemClicked(SiswaP data);
+        void onItemClicked(SiswaHomePetugas data);
        }
 
 }

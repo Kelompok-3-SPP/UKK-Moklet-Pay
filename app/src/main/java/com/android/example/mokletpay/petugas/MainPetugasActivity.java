@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class MainPetugasActivity extends Fragment {
 
     private RecyclerView recyclerSiswa;
-    private ArrayList<SiswaP> list = new ArrayList<>();
+    private ArrayList<SiswaHomePetugas> list = new ArrayList<>();
 
     public MainPetugasActivity() {
         // Required empty public constructor
@@ -32,10 +32,10 @@ public class MainPetugasActivity extends Fragment {
         recyclerSiswa = view.findViewById(R.id.recyclerHistory);
         recyclerSiswa.setHasFixedSize(true);
 
-        list.addAll(DataSiswaP.getListDataSiswaP());
+        list.addAll(DataSiswaHome.getListDataSiswaP());
 
         recyclerSiswa.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        recyclerSiswa.setAdapter(new ListSiswaAdapterP(list));
+        recyclerSiswa.setAdapter(new ListSiswaAdapterHome(list));
 
         return view;
     }

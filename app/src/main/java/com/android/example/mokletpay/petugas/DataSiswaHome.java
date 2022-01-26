@@ -2,17 +2,17 @@ package com.android.example.mokletpay.petugas;
 
 import java.util.ArrayList;
 
-public class DataSiswaP {
+public class DataSiswaHome {
     public static String[][] data = new String[][]{
             {"Rofico Ahmad", "Rp.120000", "01/06/2021"},
             {"Esther Howard","Rp.450000","01/06/2021"},
             {"Guy Hawkins","Rp.350000","01/06/2021"},
     };
 
-    public static ArrayList<SiswaP> getListDataSiswaP(){
-        ArrayList<SiswaP> list = new ArrayList<>();
+    public static ArrayList<SiswaHomePetugas> getListDataSiswaP(){
+        ArrayList<SiswaHomePetugas> list = new ArrayList<>();
         for (String[] dataSiswaP : data){
-            SiswaP siswap = new SiswaP();
+            SiswaHomePetugas siswap = new SiswaHomePetugas();
             siswap.setNamaP(dataSiswaP[0]);
             siswap.setNominalP(dataSiswaP[1]);
             siswap.setTanggalP(dataSiswaP[2]);

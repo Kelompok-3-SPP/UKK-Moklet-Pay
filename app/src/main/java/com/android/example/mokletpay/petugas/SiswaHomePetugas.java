@@ -1,6 +1,6 @@
 package com.android.example.mokletpay.petugas;
 
-public class SiswaP {
+public class SiswaHomePetugas {
     private String namaP, nominalP, tanggalP;
 
     public String getNamaP() {return namaP;}
