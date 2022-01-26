@@ -1,5 +1,6 @@
 package com.android.example.mokletpay.admin;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,12 @@ public class ListKelasAdapter extends RecyclerView.Adapter<ListKelasAdapter.List
     public void onBindViewHolder(@NonNull final ListViewHolder holder, int position) {
         com.android.example.mokletpay.admin.Kelas kelas = listKelas.get(position);
         holder.tvKelas.setText(kelas.getKelas());
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(holder.itemView.getContext(), DataDetailSiswaActivity.class);
+                holder.itemView.getContext().startActivity(i);}
+        });
 
 
     }

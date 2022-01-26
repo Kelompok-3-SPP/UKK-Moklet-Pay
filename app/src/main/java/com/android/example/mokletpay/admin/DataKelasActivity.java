@@ -1,6 +1,8 @@
 package com.android.example.mokletpay.admin;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -34,6 +36,8 @@ public class DataKelasActivity extends AppCompatActivity {
         ListKelasAdapter listKelasAdapter = new ListKelasAdapter(list);
         rvKelas.setAdapter(listKelasAdapter);
 
+
     }
 
-}
+    }
+
