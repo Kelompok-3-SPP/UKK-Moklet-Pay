@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/buttonSheetContainer"
-    android:layout_width="match_parent"
-    android:layout_height="370dp"
-    android:orientation="vertical"
-    android:background="@drawable/bottom_sheet_background">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="@drawable/bottom_sheet_background"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -23,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="72dp">
 
         <TextView
             android:id="@+id/nama"
@@ -64,16 +69,7 @@
             android:textSize="16sp"
             android:layout_below="@+id/jurusan"/>
 
-        <TextView
-            android:id="@+id/ubah"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="73dp"
-            android:fontFamily="@font/bold"
-            android:text="Ubah"
-            android:textColor="@color/blue"
-            android:textSize="18sp"
-            android:layout_toRightOf="@+id/nama"/>
+
 
         <TextView
             android:id="@+id/status_pembayaran"
@@ -97,7 +93,7 @@
             android:fontFamily="@font/bold"
             android:text="Kurang Bayar"
             android:textColor="@color/medium"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -107,18 +103,20 @@
             android:layout_marginTop="42dp">
 
             <ImageButton
-                android:id="@+id/btnprint"
+                android:id="@+id/btn_print"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/ic_btn_print" />
+                android:background="@drawable/button_border"
+                android:src="@drawable/icon_print" />
 
             <ImageButton
-                android:id="@+id/btnedit"
+                android:id="@+id/btn_edit"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
-                android:layout_toRightOf="@id/btnprint"
-                android:src="@drawable/ic_btn_edit" />
+                android:layout_toRightOf="@id/btn_print"
+                android:background="@drawable/bg_button_blue"
+                android:src="@drawable/icon_edit" />
 
 
         </RelativeLayout>
@@ -127,4 +125,4 @@
     </RelativeLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

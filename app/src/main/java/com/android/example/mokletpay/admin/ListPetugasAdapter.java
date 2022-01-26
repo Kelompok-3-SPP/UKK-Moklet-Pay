@@ -35,12 +35,7 @@ public class ListPetugasAdapter extends RecyclerView.Adapter<ListPetugasAdapter.
         Petugas petugas= listPetugas.get(position);
         holder.tvNamaPetugas.setText(petugas.getNamaPetugas());
         holder.tvHari.setText(petugas.getHari());
-        holder.itemView.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-            Intent i = new Intent(holder.itemView.getContext(), SiswaKurangBayar.class);
-        holder.itemView.getContext().startActivity(i);}
-        });
+
     }
 
     @Override

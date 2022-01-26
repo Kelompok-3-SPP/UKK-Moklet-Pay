@@ -1,5 +1,6 @@
 package com.android.example.mokletpay.admin;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,13 @@ public class ListSiswaAdapter extends RecyclerView.Adapter<ListSiswaAdapter.List
         com.android.example.mokletpay.admin.SiswaAdmin siswa = listSiswa.get(position);
         holder.tv_nama_datasiswa.setText(siswa.getNamaSiswa());
         holder.tv_kelas_datasiswa.setText(siswa.getKelasSiswa());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(holder.itemView.getContext(), SiswaKurangBayar.class);
+                holder.itemView.getContext().startActivity(i);}
+        });
 
     }
 
